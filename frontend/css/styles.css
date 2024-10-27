@@ -1,166 +1,118 @@
-/* ESTILOS GERAIS */
-* {
+/* Estilos Globais */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  color: #25282e;
+  line-height: 1.6;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-}
-
-a, i {
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.secondary-color {
-  color: #555;
-}
-
-h1, h2, h3, p {
-  margin-bottom: 20px;
-}
-
-.btn {
-  text-decoration: none;
-  background-color: #25282e;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.btn:hover {
-  background-color: #333;
-  color: #FFF;
-}
-
-/* HEADER */
+/* Cabeçalho */
 #header {
-  background-color: #fff500;
+  background-color: yellow; /* Cor amarela da escola */
+  padding: 20px 0;
   text-align: center;
-  padding: 40px;
-  border-bottom: 1px solid #CCC;
 }
 
-#header img {
-  max-height: 100px;
+#header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
 }
 
 #header p {
-  margin-bottom: 0;
-  color: #555;
+  font-size: 1.2rem;
+  color: #333;
 }
 
-/* NAVBAR */
-#navbar {
-  background-color: #14769d; /* Set background color to blue */
-  padding: 10px;
-  margin: 20px auto;
-}
-
-#navbar a {
-  color: #FFF;
-  font-size: 16px;
-  margin: 0 15px;
-  padding: 10px 20px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-#navbar a:hover {
-  background-color: #c1b696;
-  color: #FFF;
-}
-
-#navbar .row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* MAIN CONTENT */
-#main-content-container {
-  background-color: #FFF;
-  padding: 50px 0;
-}
-
-#main-content-container h2 {
-  font-size: 28px;
-  color: #25282e;
-}
-
-#main-content-container p {
-  font-size: 18px;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: justify; /* or use text-align: left; for left alignment */
-}
-
-/* SEÇÃO DE PROJETOS */
-#projects-container {
-  background-color: #f0f0f0;
-  padding: 50px 0;
-}
-
-.project-container {
-  background-color: #FFF;
+/* Informação Principal */
+.main-info {
+  text-align: justify; /* Texto justificado */
   padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#projects-container h3 {
-  font-size: 24px;
-  color: #25282e;
+.main-info h2 {
+  text-align: center; /* Centralizar título */
 }
 
-#projects-container p {
-  font-size: 16px;
-  color: #555;
+/* Container de Projetos */
+.project-container {
+  margin-bottom: 20px;
 }
 
-/* FOOTER */
+.project-container p {
+  text-align: justify; /* Texto justificado */
+}
+
+/* Seção de Depoimentos */
+.testimonial {
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Borda leve para destaque */
+  background-color: #ffffff; /* Fundo branco */
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+}
+
+.testimonial .name {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block; /* Garante que o nome fique em uma nova linha */
+  font-size: 0.9rem; /* Tamanho da fonte do nome */
+}
+
+/* Itens do Carrossel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Rodapé */
 footer {
-  background-color: #000;
-  color: #FFF;
-  padding: 30px 0;
-  border-top: 1px solid #CCC;
+  background-color: blue; /* Fundo azul */
+  color: white; /* Texto branco para melhor legibilidade */
+  padding: 20px 0;
   text-align: center;
 }
 
-footer p {
-  margin: 10px 0;
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
-footer i {
-  font-size: 24px;
+footer a:hover {
+  text-decoration: underline;
 }
 
-#social-icons-container div {
-  text-align: center;
+/* Artigos */
+.article-container {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #ffffff; /* Fundo branco para artigos */
 }
 
-#social-icons-container a:hover i {
-  color: #c1b696;
+.article-container h2 {
+  font-size: 1.8rem;
+  color: #333;
 }
 
-footer p, #social-icons-container {
-  text-align: center;
+.article-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
-/* RESPONSIVE DESIGN */
+/* Estilos Responsivos */
 @media (max-width: 768px) {
-  #navbar a {
-    display: block;
-    margin: 10px 0;
-  }
+  
+    #header h1 {
+      font-size: 2rem; /* Reduz tamanho do título no cabeçalho em telas menores */
+    }
 
-  #projects-container .col-md-6 {
-    margin-bottom: 30px;
-  }
+    .main-info,
+    footer {
+      padding: 10px; /* Reduz padding em telas menores para melhor visualização */
+    }
 }
